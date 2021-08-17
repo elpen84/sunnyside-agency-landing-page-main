@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
-}
-
-
 //font imports
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
@@ -27,6 +22,10 @@ $very-dark-gray-blue: hsl(213, 9%, 39%);
 $dark-gray-blue:  hsl(232, 10%, 55%);
 $gray-blue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
+
+html {
+    font-size: 62.5%;
+}
 
 body {
     font-size: 18px;
