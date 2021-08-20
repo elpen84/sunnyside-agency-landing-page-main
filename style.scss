@@ -24,15 +24,29 @@ $dark-gray-blue:  hsl(232, 10%, 55%);
 $gray-blue: hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
 
-//font
+//fonts
 $font1: 'Barlow', sans-serif;
 $font2: 'Fraunces', serif;
 
-html {
-    font-size: 62.5%;
-}
+// html {
+//     font-size: 62.5%;
+// }
 
 body {
     font-size: 18px;
-    font-family: 'Barlow', sans-serif;
+    font-family: $font1;
+}
+
+.hero-section {
+  height: 100vh;
+  background: url('/images/desktop/image-header.jpg') no-repeat center;
+  background-size: cover;
+ .main-navbar {
+    width: 1440px;
+    margin: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+ }
+
 }

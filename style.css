@@ -49,12 +49,26 @@ table {
   border-spacing: 0;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 body {
   font-size: 18px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
+}
+
+.hero-section {
+  height: 100vh;
+  background: url("/images/desktop/image-header.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.hero-section .main-navbar {
+  width: 1440px;
+  margin: auto;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
