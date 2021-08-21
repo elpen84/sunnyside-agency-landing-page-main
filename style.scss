@@ -48,5 +48,13 @@ body {
     display: flex;
     justify-content: space-between;
  }
+ .navbar {
+   display: flex;
+   padding: 1rem 1rem;
+ }
+ .navbar-link {
+   text-decoration: none;
+   color: #fff;
+ }
 
 }
