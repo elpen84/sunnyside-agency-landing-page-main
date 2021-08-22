@@ -133,4 +133,55 @@ img {
 .about-section .about-row .about-box {
   width: 100%;
 }
+
+.about-section .about-row .about-box .inner {
+  width: 60%;
+  padding: 30px;
+}
+
+.about-section .about-row .about-box .inner h2 {
+  font-size: 48px;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+}
+
+.about-section .about-row .about-box .inner p {
+  margin: 30px 0px;
+  color: #818498;
+  line-height: 30px;
+}
+
+.about-section .about-row .about-box .inner a {
+  color: #19536b;
+  text-decoration: none;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.about-section .about-row .about-box .inner a:after {
+  content: '';
+  display: block;
+  width: 110%;
+  height: 8px;
+  margin-left: -5%;
+  margin-top: -5px;
+  border-radius: 20%;
+}
+
+.about-section .about-row .about-box .inner a.yellow:after {
+  background: #ffe347;
+}
+
+.about-section .about-row .about-box .inner a.red:after {
+  background: #ffbcb3;
+}
+
+.about-section .about-row:nth-child(even) .about-box .inner {
+  margin-right: auto;
+}
+
+.about-section .about-row:nth-child(odd) .about-box .inner {
+  margin-left: auto;
+}
 /*# sourceMappingURL=style.css.map */
