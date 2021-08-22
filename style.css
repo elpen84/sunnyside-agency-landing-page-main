@@ -54,6 +54,10 @@ body {
   font-family: "Barlow", sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .hero-section {
   height: 100vh;
   background: url("/images/desktop/image-header.jpg") no-repeat center;
@@ -70,17 +74,63 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.hero-section .navbar {
+.hero-section .main-navbar .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 1rem 1rem;
 }
 
-.hero-section .navbar-link {
+.hero-section .main-navbar .navbar a.navbar-link {
+  display: block;
   text-decoration: none;
-  color: #fff;
+  color: white;
+  padding: 15px 20px;
+}
+
+.hero-section .main-navbar .navbar a.navbar-link.link-active {
+  background: white;
+  color: #818498;
+  border-radius: 40px;
+  font-family: "Fraunces", serif;
+  margin-left: 10px;
+}
+
+.hero-section .main-navbar .navbar a.navbar-link.link-active:hover {
+  background: #e6e6e6;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.hero-control {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 72px;
+  color: white;
+  font-family: "Fraunces", serif;
+}
+
+.hero-control .hero-cover-arrow {
+  margin-top: 120px;
+}
+
+.about-section .about-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about-section .about-row .about-box {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
