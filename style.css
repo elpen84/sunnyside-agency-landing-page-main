@@ -4,8 +4,6 @@
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -263,6 +261,119 @@ img {
   height: 120px;
   -o-object-fit: cover;
      object-fit: cover;
+  margin: 50px auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.testimonals-section .testimonals .testimonal .testi-info p {
+  line-height: 30px;
+  color: #818498;
+  width: 80%;
   margin: auto;
+}
+
+.testimonals-section .testimonals .testimonal .testi-info .name {
+  margin-top: 70px;
+  margin-bottom: 15px;
+  font-size: 26px;
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  font-weight: 900;
+}
+
+.testimonals-section .testimonals .testimonal .testi-info .designation {
+  color: #818498;
+}
+
+.projects-section .projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.projects-section .projects .project {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-section .projects .project .project-info {
+  position: absolute;
+  bottom: -100px;
+  left: 0px;
+  width: 100%;
+}
+
+.projects-section .projects .project .project-info a {
+  display: block;
+  color: white;
+  background: black;
+  padding: 30px;
+  font-size: 22px;
+}
+
+.main-footer {
+  background: #58ad9c;
+  text-align: center;
+  padding: 6.5rem 0rem;
+}
+
+.main-footer .footer-logo {
+  width: 8rem;
+  margin: auto;
+  color: #25564b;
+}
+
+.main-footer .footer-logo svg path {
+  fill: currentColor;
+}
+
+.main-footer .footer-navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto;
+  width: 100%;
+}
+
+.main-footer .footer-navbar .navbar-link {
+  text-decoration: none;
+  padding: 1rem 1rem;
+  color: #25564b;
+}
+
+.main-footer .footer-navbar .navbar-link:hover {
+  color: white;
+}
+
+.main-footer .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 6rem;
+  width: 100%;
+}
+
+.main-footer .footer-social .footer-social-icon {
+  display: block;
+  padding: 1rem 1rem;
+  color: #25564b;
+}
+
+.main-footer .footer-social .footer-social-icon:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

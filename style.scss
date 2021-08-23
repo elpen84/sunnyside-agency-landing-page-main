@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 @import 'reset';
@@ -218,8 +218,98 @@ img {
           width: 120px;
           height: 120px;
           object-fit: cover;
-          margin: auto;
+          margin: 50px auto;
+          border-radius: 50%;
+          overflow: hidden;
+        }
+        .testi-info {
+          p {
+            line-height: 30px;
+            color: $dark_gray_blue;
+            width: 80%;
+            margin: auto;
+          }
+          .name {
+            margin-top: 70px;
+            margin-bottom: 15px;
+            font-size: 26px;
+            font-family:  $font2;
+            color: $very-dark-blue;
+            font-weight: 900;
+          }
+          .designation {
+            color: $dark-gray-blue;
+
+          }
         }
      }
    }
+ }
+
+ .projects-section {
+   .projects{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     .project {
+       position: relative;
+       overflow: hidden;
+       .project-info {
+        position: absolute;
+        bottom: -100px;
+        left: 0px;
+        width: 100%;
+        a {
+          display: block;
+          color: $white;
+          background: black;
+          padding: 30px;
+          font-size: 22px;
+        }
+      }
+     }
+   }
+ }
+
+ .main-footer {
+   background: lighten($dark-cyan-footer, 10% );
+   text-align: center;
+   padding: 6.5rem 0rem;
+   .footer-logo {
+     width: 8rem;
+     margin: auto;
+     color: $dark-cyan;
+     svg path {
+       fill: currentColor;
+     }
+    }
+    .footer-navbar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3rem auto;
+      width: 100%;
+      .navbar-link {
+        text-decoration: none;
+        padding: 1rem 1rem;
+        color: $dark-cyan;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+    .footer-social {
+      display:flex;
+      justify-content: center; 
+      align-items: center;
+      margin-top: 6rem;
+      width: 100%;
+      .footer-social-icon {
+        display: block;
+        padding: 1rem 1rem;
+        color: $dark-cyan;
+        &:hover {
+          color: $white;
+        }
+      }
+    }
  }
