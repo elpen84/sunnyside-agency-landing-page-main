@@ -184,4 +184,85 @@ img {
 .about-section .about-row:nth-child(odd) .about-box .inner {
   margin-left: auto;
 }
+
+.section-services .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section-services .services .service {
+  width: 100%;
+  position: relative;
+}
+
+.section-services .services .service .service-info {
+  position: absolute;
+  left: 0px;
+  bottom: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.section-services .services .service .service-info h3 {
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  margin-bottom: 30px;
+}
+
+.section-services .services .service .service-info p {
+  width: 45%;
+  margin: auto;
+  line-height: 30px;
+}
+
+.section-services .services .service .service-info.blue h3 {
+  color: #19536b;
+}
+
+.section-services .services .service .service-info.blue p {
+  color: #237395;
+}
+
+.section-services .services .service .service-info.blue.green h3 {
+  color: #25564b;
+}
+
+.section-services .services .service .service-info.blue.green p {
+  color: #34796a;
+}
+
+.testimonals-section {
+  padding: 120px 0px;
+  text-align: center;
+}
+
+.testimonals-section .testi-header {
+  font-family: "Fraunces", serif;
+  font-size: 22px;
+  color: #818498;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.testimonals-section .testimonals {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 70px auto;
+}
+
+.testimonals-section .testimonals .testimonal {
+  width: 100%;
+  padding: 30px;
+}
+
+.testimonals-section .testimonals .testimonal .testi-image {
+  width: 120px;
+  height: 120px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: auto;
+}
 /*# sourceMappingURL=style.css.map */
