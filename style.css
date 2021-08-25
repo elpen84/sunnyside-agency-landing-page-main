@@ -4,6 +4,8 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -65,7 +67,7 @@ img {
 .hero-section .main-navbar {
   width: 1440px;
   margin: auto;
-  padding: 30px;
+  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,10 +79,60 @@ img {
           align-items: center;
 }
 
+@media only screen and (max-width: 1440px) {
+  .hero-section .main-navbar {
+    width: 90%;
+  }
+}
+
+.hero-section .main-navbar .burger-icon {
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-section .main-navbar .burger-icon {
+    display: block;
+  }
+}
+
+.hero-section .main-navbar .burger-icon:active {
+  background: white;
+  color: #19536b;
+}
+
+.hero-section .main-navbar .burger-icon:hover {
+  background: white;
+  color: #19536b;
+}
+
 .hero-section .main-navbar .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-section .main-navbar .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: white;
+    position: absolute;
+    left: 7.5%;
+    top: 5.5rem;
+    width: 85%;
+    -webkit-box-shadow: 4px 4px 8px overlay(black, 0.3);
+            box-shadow: 4px 4px 8px overlay(black, 0.3);
+    text-align: center;
+    padding: 1.5rem 0;
+  }
 }
 
 .hero-section .main-navbar .navbar a.navbar-link {
@@ -90,12 +142,29 @@ img {
   padding: 15px 20px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-section .main-navbar .navbar a.navbar-link {
+    color: #19536b;
+    margin: 3px auto;
+    display: inline-block;
+  }
+}
+
 .hero-section .main-navbar .navbar a.navbar-link.link-active {
   background: white;
   color: #818498;
   border-radius: 40px;
   font-family: "Fraunces", serif;
   margin-left: 10px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .hero-section .main-navbar .navbar a.navbar-link.link-active {
+    margin-left: 0;
+    margin-top: 0.8rem;
+    background: #fad400;
+    color: #19536b;
+  }
 }
 
 .hero-section .main-navbar .navbar a.navbar-link.link-active:hover {
