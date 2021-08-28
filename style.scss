@@ -149,6 +149,9 @@ img {
          order: 1;
          text-align: center;
          padding: 2.5rem 0;
+         @include lg-max {
+           order: 1;
+         }
        }
        .inner {
          @include lg-max {

@@ -224,6 +224,14 @@ img {
   padding: 2.5rem 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about-section .about-row .about-box.about-box-test {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
 .about-section .about-row .about-box .inner {
   width: 60%;
   padding: 30px;
