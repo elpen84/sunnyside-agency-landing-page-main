@@ -181,6 +181,12 @@ img {
   font-family: "Fraunces", serif;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero-control {
+    font-size: 48px;
+  }
+}
+
 .hero-control .hero-cover-arrow {
   margin-top: 120px;
 }
@@ -197,8 +203,25 @@ img {
           justify-content: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about-section .about-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .about-section .about-row .about-box {
   width: 100%;
+}
+
+.about-section .about-row .about-box.about-box-test {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  text-align: center;
+  padding: 2.5rem 0;
 }
 
 .about-section .about-row .about-box .inner {
@@ -206,10 +229,22 @@ img {
   padding: 30px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .about-section .about-row .about-box .inner {
+    width: 100%;
+  }
+}
+
 .about-section .about-row .about-box .inner h2 {
   font-size: 48px;
   font-family: "Fraunces", serif;
   color: #23303e;
+}
+
+@media only screen and (max-width: 1024px) {
+  .about-section .about-row .about-box .inner h2 {
+    font-size: 2rem;
+  }
 }
 
 .about-section .about-row .about-box .inner p {
@@ -258,6 +293,15 @@ img {
   display: flex;
 }
 
+@media only screen and (max-width: 1024px) {
+  .section-services .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section-services .services .service {
   width: 100%;
   position: relative;
@@ -271,6 +315,12 @@ img {
   text-align: center;
 }
 
+.section-services .services .service .service-info img {
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .section-services .services .service .service-info h3 {
   font-size: 32px;
   font-family: "Fraunces", serif;
@@ -281,6 +331,12 @@ img {
   width: 45%;
   margin: auto;
   line-height: 30px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section-services .services .service .service-info p {
+    width: 80%;
+  }
 }
 
 .section-services .services .service .service-info.blue h3 {
@@ -304,6 +360,12 @@ img {
   text-align: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  .testimonals-section {
+    padding: 120px 0px;
+  }
+}
+
 .testimonals-section .testi-header {
   font-family: "Fraunces", serif;
   font-size: 22px;
@@ -318,6 +380,15 @@ img {
   display: flex;
   width: 80%;
   margin: 70px auto;
+}
+
+@media only screen and (max-width: 1024px) {
+  .testimonals-section .testimonals {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .testimonals-section .testimonals .testimonal {
@@ -362,6 +433,13 @@ img {
       grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+@media only screen and (max-width: 1024px) {
+  .projects-section .projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .projects-section .projects .project {
   position: relative;
   overflow: hidden;
@@ -380,6 +458,12 @@ img {
   background: black;
   padding: 30px;
   font-size: 22px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects-section .projects .project .project-info a {
+    font-size: 18px;
+  }
 }
 
 .main-footer {

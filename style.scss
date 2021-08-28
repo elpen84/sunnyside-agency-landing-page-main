@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @import 'queries';
@@ -127,6 +127,9 @@ img {
    font-size: 72px;
    color: $white;
    font-family: $font2;
+   @include lg-max {
+     font-size: 48px;
+   }
    .hero-cover-arrow {
     margin-top: 120px;
    }
@@ -137,9 +140,20 @@ img {
      display: flex;
      align-items: center;
      justify-content: center;
+     @include lg-max {
+       flex-direction: column;
+     }
      .about-box {
        width: 100%;
+       &.about-box-test {
+         order: 1;
+         text-align: center;
+         padding: 2.5rem 0;
+       }
        .inner {
+         @include lg-max {
+           width: 100%;
+         }
          width: 60%;
          padding: 30px;
       
@@ -147,6 +161,9 @@ img {
            font-size: 48px;
            font-family: $font2;
            color: $very-dark-blue;
+           @include lg-max {
+             font-size: 2rem;
+           }
 
          }
          p {
@@ -202,10 +219,17 @@ img {
  .section-services {
    .services {
      display: flex;
+     @include lg-max {
+       flex-direction: column;
+     }
      .service {
        width: 100%;
        position: relative;
        .service-info {
+         img {
+           height: 100vh;
+           object-fit: cover;
+         }
          position: absolute;
          left: 0px;
          bottom: 30px;
@@ -220,6 +244,9 @@ img {
            width: 45%;
            margin: auto;
            line-height: 30px;
+           @include lg-max {
+             width: 80%;
+           }
          }
          &.blue {
             h3 {
@@ -245,6 +272,9 @@ img {
 
  .testimonals-section {
    padding: 120px 0px;
+   @include lg-max {
+     padding: 120px 0px;
+   }
    text-align: center;
    .testi-header {
      font-family: $font2;
@@ -257,6 +287,9 @@ img {
     display: flex;
     width: 80%;
     margin: 70px auto;
+    @include lg-max {
+      flex-direction: column;
+    }
      .testimonal{
         width: 100%;
         padding: 30px;
@@ -296,6 +329,9 @@ img {
    .projects{
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr;
+     @include lg-max {
+      grid-template-columns: 1fr;
+     }
      .project {
        position: relative;
        overflow: hidden;
@@ -310,6 +346,9 @@ img {
           background: black;
           padding: 30px;
           font-size: 22px;
+          @include lg-max {
+            font-size: 18px;
+           }
         }
       }
      }
